@@ -1,4 +1,4 @@
-.header {font-family: Arial, Helvetica, sans-serif; }
+.header { font-family: Arial, Helvetica, sans-serif; }
 
 .navBar {
     list-style-type: none;
@@ -6,6 +6,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #363636;
+    border-radius: 10px;
 }
 
 .navBarItem { float: left; }
@@ -19,4 +20,12 @@
     text-decoration: none;
 }
 
+#markdown-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBarItem.selectedItem .navBarLink { background-color: #00CCCC; }
+
 .navBarLink:hover { background-color: #202020; }
+
+.navBarItem.selectedItem .navBarLink:hover { background-color: #00AAAA; }
