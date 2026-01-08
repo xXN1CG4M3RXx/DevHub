@@ -19,4 +19,8 @@
     text-decoration: none;
 }
 
+.navBarItem.selectedItem .navBarLink { background-color: #00CCCC; }
+
 .navBarLink:hover { background-color: #202020; }
+
+.navBarItem.selectedItem .navBarLink:hover { background-color: #00AAAA; }
