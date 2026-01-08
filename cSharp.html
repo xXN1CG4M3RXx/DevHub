@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CH">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheatHub - C#</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <link rel="icon" href="assets/favicon.jpg" type="image/x-icon">
 </head>
 <body>
+    <h1 class="header">CheatHub - C#</h1>
     <ul class="navBar">
         <li class="navBarItem"><a href="/" class="navBarLink">Home</a></li>
         <li class="navBarItem"><a href="/python.html" class="navBarLink">Python</a></li>
         <li class="navBarItem"><a href="/java.html" class="navBarLink">Java</a></li>
         <li class="navBarItem selectedItem"><a href="/cSharp.html" class="navBarLink">C#</a></li>
     </ul>
-    <h1 class="header">C#</h1>
+    <div id="markdown-content">
+## Hello World in C#
+```csharp
+using System;
+
+class HelloWorld
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="scripts.js"></script>
 </html>
