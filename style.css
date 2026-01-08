@@ -6,7 +6,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #363636;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .navBarItem { float: left; }
