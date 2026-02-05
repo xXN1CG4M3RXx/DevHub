@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevHub - C#</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <link rel="icon" href="assets/cSharpFavicon.png" type="image/x-icon">
 </head>
 <body>
-    <h1 class="header">DevHub - C#</h1>
     <ul class="navBar">
         <li class="navBarItem"><a href="./" class="navBarLink">Home</a></li>
         <li class="navBarItem"><a href="./markdown.html" class="navBarLink">Markdown</a></li>
@@ -22,22 +20,25 @@
         <li class="navBarItem"><a href="./javaScript.html" class="navBarLink">JavaScript</a></li>
         <li class="navBarItem"><a href="./git.html" class="navBarLink">Git</a></li>
     </ul>
-    <div id="markdown-content">
-## Hello World in C#
-```csharp
-using System;
 
-class HelloWorld
+    <div class="sheetText">
+        <h2 class="header">Hello world in C#</h2>
+
+        <pre class="codeBlock"><code class="language-csharp">using System;
+
+namespace HelloWorld
 {
-    static void Main()
+    class Program
     {
-        Console.WriteLine("Hello, World!");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
     }
 }
-```
+</code></pre>
+
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="scripts.js"></script>
 </html>
