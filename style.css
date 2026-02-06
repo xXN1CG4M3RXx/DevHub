@@ -1,15 +1,37 @@
-.header { font-family: Arial, Helvetica, sans-serif; }
+html {
+    scroll-behavior: smooth;
+    scroll-margin-top: 150px;
+}
+
+body {
+    background: linear-gradient(to right, #00aaaa, #aa00aa);
+}
+
+.anchor {
+    display: block;
+    height: 100px; /* This is your navbar height + breathing room */
+    margin-top: -100px; /* This pulls the layout back so there's no visible gap */
+    visibility: hidden;
+    pointer-events: none; /* Makes it so you can't accidentally click the ghost */
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
 
 .navBar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #363636;
+    background: linear-gradient(to right, #00aaaa, #aa00aa);
     border-radius: 10px;
 }
 
-.navBarItem { float: left; }
+.navBarItem {
+    float: left;
+}
 
 .navBarLink {
     font-family: Arial, Helvetica, sans-serif;
@@ -18,19 +40,102 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.navBarItem.selectedItem .navBarLink { background-color: #00CCCC; }
+.chapterNavigator {
+    list-style-type: none;
+    border-color: #000000;
+    margin-top: 6px;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #00aaaa, #aa00aa);
+    border-radius: 10px;
+}
 
-.navBarLink:hover { background-color: #202020; }
+.chapterNavigatorItem {
+    float: left;
+}
 
-.navBarItem.selectedItem .navBarLink:hover { background-color: #00AAAA; }
+.chapterNavigatorLink {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.chapterNavigatorLink:hover {
+    background-color: #363636;
+}
+
+.navBarItem.selectedItem .navBarLink {
+    background-color: #363636;
+}
+
+.navBarLink:hover {
+    background-color: #202020;
+}
+
+.navBarItem.selectedItem .navBarLink:hover {
+    background-color: #202020;
+}
 
 .codeBlock {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     margin: 20px;
     padding: 20px;
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     border-radius: 12px;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.list {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 20px;
+    line-height: 30px;
+}
+
+.headBar {
+    top: 8px;
+    position: sticky;
+    width: 100%;
+}
+
+.headNavigator {
+    top: 60px;
+    position: sticky;
+    width: 100%;
+}
+
+.content {
+    background-color: #363636;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    border-collapse: collapse;
+    width: fit-content;
+    margin: 20px 0;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #ffffff;
+    padding: 8px 12px;
 }

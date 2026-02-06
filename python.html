@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-CH">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,560 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/pythonFavicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <ul class="navBar">
-        <li class="navBarItem"><a href="./" class="navBarLink">Home</a></li>
-        <li class="navBarItem"><a href="./markdown.html" class="navBarLink">Markdown</a></li>
-        <li class="navBarItem selectedItem"><a href="./python.html" class="navBarLink">Python</a></li>
-        <li class="navBarItem"><a href="./java.html" class="navBarLink">Java</a></li>
-        <li class="navBarItem"><a href="./cSharp.html" class="navBarLink">C#</a></li>
-        <li class="navBarItem"><a href="./sql.html" class="navBarLink">SQL</a></li>
-        <li class="navBarItem"><a href="./html.html" class="navBarLink">HTML</a></li>
-        <li class="navBarItem"><a href="./css.html" class="navBarLink">CSS</a></li>
-        <li class="navBarItem"><a href="./javaScript.html" class="navBarLink">JavaScript</a></li>
-        <li class="navBarItem"><a href="./git.html" class="navBarLink">Git</a></li>
-    </ul>
+    <div class="content">
+        <header class="headBar">
+            <ul class="navBar">
+                <li class="navBarItem"><a href="./" class="navBarLink">Home</a></li>
+                <li class="navBarItem"><a href="./markdown.html" class="navBarLink">Markdown</a></li>
+                <li class="navBarItem selectedItem"><a href="./python.html" class="navBarLink">Python</a></li>
+                <li class="navBarItem"><a href="./java.html" class="navBarLink">Java</a></li>
+                <li class="navBarItem"><a href="./cSharp.html" class="navBarLink">C#</a></li>
+                <li class="navBarItem"><a href="./sql.html" class="navBarLink">SQL</a></li>
+                <li class="navBarItem"><a href="./html.html" class="navBarLink">HTML</a></li>
+                <li class="navBarItem"><a href="./css.html" class="navBarLink">CSS</a></li>
+                <li class="navBarItem"><a href="./javaScript.html" class="navBarLink">JavaScript</a></li>
+                <li class="navBarItem"><a href="./git.html" class="navBarLink">Git</a></li>
+            </ul>
+        </header>
 
-    <div class="sheetText">
-        <h2 class="header">Hello world in Python</h2>
-        
-        <pre class="codeBlock"><code class="language-python">print("Hello, World!")</code></pre>
+        <header class="headNavigator">
+            <ul class="chapterNavigator">
+                <li class="chapterNavigatorItem"><a href="#introduction" class="chapterNavigatorLink">Introduction</a>
+                </li>
+                <li class="chapterNavigatorItem"><a href="#comments" class="chapterNavigatorLink">Comments</a></li>
+                <li class="chapterNavigatorItem"><a href="#variables" class="chapterNavigatorLink">Variables</a></li>
+                <li class="chapterNavigatorItem"><a href="#datatypes" class="chapterNavigatorLink">Data Types</a></li>
+                <li class="chapterNavigatorItem"><a href="#operators" class="chapterNavigatorLink">Operators</a></li>
+                <li class="chapterNavigatorItem"><a href="#conditional-statements"
+                        class="chapterNavigatorLink">Conditional Statements</a></li>
+                <li class="chapterNavigatorItem"><a href="#match-statements" class="chapterNavigatorLink">Match
+                        Statements</a></li>
+                <li class="chapterNavigatorItem"><a href="#loops" class="chapterNavigatorLink">Loops</a></li>
+                <li class="chapterNavigatorItem"><a href="#functions" class="chapterNavigatorLink">Functions</a></li>
+                <li class="chapterNavigatorItem"><a href="#try-except" class="chapterNavigatorLink">Try - Except</a>
+                </li>
+                <li class="chapterNavigatorItem"><a href="#classes" class="chapterNavigatorLink">Classes</a></li>
+            </ul>
+        </header>
+
+        <div class="sheetText">
+            <h1 class="header"><b>Python</b></h1>
+            <span class="anchor" id="introduction"></span>
+            <h2 class="header"><b>Introduction</b></h2>
+            <p class="text">Python is a high-level, interpreted programming language known for its simplicity and
+                readability. Its main uses are web development, data science, artificial intelligence, and automation.
+                Here
+                you will learn the basics of Python programming.</p>
+
+            <span class="anchor" id="comments"></span>
+            <h2 class="header"><b>Comments</b></h2>
+            <p class="text">Comments in Python are lines that start with a # symbol and are ignored by the interpreter.
+                They
+                are used to explain code and make it more readable.</p>
+            <pre class="codeBlock"><code># This is a comment in Python</code></pre>
+
+            <span class="anchor" id="variables"></span>
+            <h2 class="header"><b>Variables</b></h2>
+            <h3 class="header"><b>Types of variables</b></h3>
+            <table class="table">
+                <tr>
+                    <th>Type</th>
+                    <th>Use</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>Integer</td>
+                    <td>Storing whole numbers</td>
+                    <td>x = 5</td>
+                </tr>
+                <tr>
+                    <td>Float</td>
+                    <td>Storing decimal numbers</td>
+                    <td>y = 3.14</td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td>Storing text</td>
+                    <td>name = "John"</td>
+                </tr>
+                <tr>
+                    <td>Boolean</td>
+                    <td>Storing True or False values</td>
+                    <td>is_active = True</td>
+                </tr>
+            </table>
+            <br>
+
+            <h3 class="header"><b>Strings</b></h3>
+            <p class="text">Strings are used to store <b>text</b>. They can be any length or single characters. They are
+                enclosed in either single or double quotes. They can be created by assigning a value to a variable.</p>
+
+            <pre class="codeBlock"><code># Creating a string
+my_string = "Hello, World!"<br>print(my_string)<br>
+# Output: Hello, World!</code></pre>
+
+            <br>
+
+            <p class="text">There are a lot of useful operations that can be performed on strings in Python.</p>
+            <pre class="codeBlock"><code># Concatenation
+str1 = "Hello, "
+str2 = "World!"
+result = str1 + str2
+print(result)  # Output: Hello, World!
+
+# f strings
+name = "Alice"
+age = 30
+message = f"My name is {name} and I am {age} years old."
+print(message)  # Output: My name is Alice and I am 30 years old.
+
+# Length
+length = len(str1)
+print(length)  # Output: 7
+
+# Indexing
+first_char = str1[0]
+print(first_char)  # Output: H
+
+# Slicing
+substring = str2[0:5]
+print(substring)  # Output: World
+
+# Splitting
+words = str1.split(", ")
+print(words)  # Output: ['Hello', 'World!']
+
+# Repetition
+str3 = "Ha" * 3
+print(str3)  # Output: HaHaHa</code></pre>
+
+            <br>
+            <h3 class="header"><b>Integers and Floats</b></h3>
+            <p class="text">Integers are whole numbers, while floats are decimal numbers. They are both numeric data
+                types in Python.</p>
+
+            <pre class="codeBlock"><code># Creating an integer
+my_integer = 10
+
+# Creating a float
+my_float = 3.14
+
+# Addition
+sum = my_integer + my_float
+print(sum)  # Output: 13.14
+
+# Subtraction
+difference = my_integer - my_float
+print(difference)  # Output: 6.86
+
+# Multiplication
+product = my_integer * my_float
+print(product)  # Output: 31.4
+
+# Division
+quotient = my_integer / my_float
+print(quotient)  # Output: 0.92</code></pre>
+
+            <br>
+
+            <h3 class="header"><b>Booleans</b></h3>
+            <p class="text">Booleans are a data type that can only have two values: True or False. They are often used
+                in conditional statements and logical operations.</p>
+            <pre class="codeBlock"><code># Creating a boolean
+is_active = True
+is_admin = False
+
+# Logical AND
+result_and = is_active and is_admin
+print(result_and)  # Output: False
+
+# Logical OR
+result_or = is_active or is_admin
+print(result_or)  # Output: True
+
+# Logical NOT
+result_not = not is_active
+print(result_not)  # Output: False</code></pre>
+
+            <br>
+            <span class="anchor" id="datatypes"></span>
+            <h2 class="header"><b>Data Types</b></h2>
+
+            <p class="text">Python has several built-in data types, including:</p>
+            <ul class="list">
+                <li>Integer (int): Whole numbers, e.g., 1, 2, 3</li>
+                <li>Float (float): Decimal numbers, e.g., 3.14, 2.71</li>
+                <li>String (str): Text enclosed in quotes, e.g., "Hello"</li>
+                <li>Boolean (bool): True or False values</li>
+                <li>List: Ordered collection of items, e.g., [1, 2, 3]</li>
+                <li>Tuple: Immutable ordered collection of items, e.g., (1, 2, 3)</li>
+                <li>Dictionary (dict): Key-value pairs, e.g., {"name": "John", "age": 30}</li>
+                <li>Set: Unordered collection of unique items, e.g., {1, 2, 3}</li>
+            </ul>
+
+            <p class="text">This chapter will only cover Lists, Dictionarys, Sets and Tuples since the others have been
+                covered in the previous chapter.</p>
+            <br>
+
+            <h3 class="header"><b>Lists</b></h3>
+            <p class="text">Lists are ordered collections of items that can be of different data types. They are
+                mutable, meaning you can change their content.</p>
+            <pre class="codeBlock"><code># Creating a list
+my_list = [1, 2, 3, "Hello", True]
+
+# Accessing single elements
+first_element = my_list[0]
+print(first_element)  # Output: 1
+
+# Accessing a range of elements
+subset = my_list[1:4]
+print(subset)  # Output: [2, 3, "Hello"]
+
+# Modifying elements
+my_list[2] = 5
+print(my_list)  # Output: [1, 2, 5, "Hello", True]</code></pre>
+            <br>
+
+            <h3 class="header"><b>Dictionaries</b></h3>
+            <p class="text">Dictionaries are unordered collections of key-value pairs. Keys must be unique and
+                immutable, while values can be of any data type.</p>
+            <pre class="codeBlock"><code># Creating a dictionary
+my_dict = {"name": "John", "age": 30, "city": "New York"}
+
+# Accessing values
+name = my_dict["name"]
+print(name)  # Output: John
+
+# Modifying values
+my_dict["age"] = 31
+print(my_dict)  # Output: {"name": "John", "age": 31, "city": "New York"}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Sets</b></h3>
+            <p class="text">Sets are unordered collections of unique elements. They are useful for removing duplicates
+                and performing mathematical set operations.</p>
+            <pre class="codeBlock"><code># Creating a set
+my_set = {1, 2, 3, 4, 5}
+
+# Adding elements
+my_set.add(6)
+print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+# Removing elements
+my_set.remove(2)
+print(my_set)  # Output: {1, 3, 4, 5, 6}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Tuples</b></h3>
+            <p class="text">Tuples are ordered collections of items that are immutable (cannot be changed). They are
+                similar to lists but cannot be modified after creation.</p>
+            <pre class="codeBlock"><code># Creating a tuple
+my_tuple = (1, 2, 3, "Hello", True)
+
+# Accessing elements
+first_element = my_tuple[0]
+print(first_element)  # Output: 1
+
+# Tuples are immutable - this would cause an error:
+# my_tuple[0] = 5</code></pre>
+            <br>
+
+            <span class="anchor" id="operators"></span>
+            <h2 class="header"><b>Operators</b></h2>
+            <p class="text">Operators are special symbols that perform operations on variables and values. Python has
+                several types of operators, including:</p>
+            <ul class="list">
+                <li>Arithmetic Operators: +, -, *, /, %, **, //</li>
+                <li>Comparison Operators: ==, !=, >, <,>=, <=< /li>
+                <li>Logical Operators: and, or, not</li>
+                <li>Assignment Operators: =, +=, -=, *=, /=</li>
+                <li>Membership Operators: in, not in</li>
+                <li>Identity Operators: is, is not</li>
+            </ul>
+            <br>
+
+            <h3 class="header"><b>Arithmetic Operators</b></h3>
+            <p class="text">Arithmetic operators are used to perform mathematical operations on numbers.</p>
+            <pre class="codeBlock"><code># Addition
+result_add = 5 + 3
+print(result_add)  # Output: 8
+
+# Subtraction
+result_sub = 5 - 3
+print(result_sub)  # Output: 2
+
+# Multiplication
+result_mul = 5 * 3
+print(result_mul)  # Output: 15
+
+# Division
+result_div = 5 / 3
+print(result_div)  # Output: 1.6666666666666667
+
+# Modulus (remainder)
+result_mod = 5 % 3
+print(result_mod)  # Output: 2
+
+# Exponentiation
+result_exp = 5 ** 3
+print(result_exp)  # Output: 125
+
+# Floor Division (quotient rounded down to the nearest integer)
+result_floor = 5 // 3
+print(result_floor)  # Output: 1</code></pre>
+            <br>
+
+            <h3 class="header"><b>Comparison Operators</b></h3>
+            <p class="text">Comparison operators are used to compare values and return a boolean result (True or False).
+            </p>
+            <pre class="codeBlock"><code># Equal to
+result_eq = 5 == 3
+print(result_eq)  # Output: False
+
+# Not equal to
+result_ne = 5 != 3
+print(result_ne)  # Output: True
+
+# Greater than
+result_gt = 5 > 3
+print(result_gt)  # Output: True
+
+# Less than
+result_lt = 5 < 3
+print(result_lt)  # Output: False
+
+# Greater than or equal to
+result_ge = 5 >= 3
+print(result_ge)  # Output: True
+
+# Less than or equal to
+result_le = 5 <= 3
+print(result_le)  # Output: False</code></pre>
+            <br>
+
+            <h3 class="header"><b>Logical Operators</b></h3>
+            <p class="text">Logical operators are used to combine conditional statements and return a boolean result.
+            </p>
+            <pre class="codeBlock"><code># Logical AND
+result_and = True and False
+print(result_and)  # Output: False
+
+# Logical OR
+result_or = True or False
+print(result_or)  # Output: True
+
+# Logical NOT
+result_not = not True
+print(result_not)  # Output: False</code></pre>
+            <br>
+
+            <h3 class="header"><b>Assignment Operators</b></h3>
+            <p class="text">Assignment operators are used to assign values to variables.</p>
+            <pre class="codeBlock"><code># Simple assignment
+x = 5
+print(x)  # Output: 5
+
+# Addition assignment
+x += 3
+print(x)  # Output: 8
+
+# Subtraction assignment
+x -= 3
+print(x)  # Output: 5
+
+# Multiplication assignment
+x *= 3
+print(x)  # Output: 15
+
+# Division assignment
+x /= 3
+print(x)  # Output: 5.0</code></pre>
+            <br>
+
+            <h3 class="header"><b>Membership Operators</b></h3>
+            <p class="text">Membership operators are used to check if a value is present in a sequence (like a list,
+                tuple, or string).</p>
+            <pre class="codeBlock"><code># in operator
+my_list = [1, 2, 3, 4, 5]
+result_in = 3 in my_list
+print(result_in)  # Output: True
+
+# not in operator
+result_not_in = 6 not in my_list
+print(result_not_in)  # Output: True</code></pre>
+            <br>
+
+            <h3 class="header"><b>Identity Operators</b></h3>
+            <p class="text">Identity operators are used to check if two variables refer to the same object in memory.
+            </p>
+            <pre class="codeBlock"><code># is operator
+x = [1, 2, 3]
+y = x
+result_is = x is y
+print(result_is)  # Output: True
+
+# is not operator
+result_is_not = x is not y
+print(result_is_not)  # Output: False</code></pre>
+            <br>
+
+            <span class="anchor" id="conditional-statements"></span>
+            <h2 class="header"><b>Conditional Statements</b></h2>
+            <p class="text">Conditional statements are used to perform different actions based on different conditions.
+                The most
+                common conditional statements in Python are if, elif, and else.</p>
+
+            <br>
+
+            <h3 class="header"><b>if statement</b></h3>
+            <p class="text">if statements are used to execute a block of code if a specified condition is true.</p>
+            <pre class="codeBlock"><code># if statement
+x = 10
+if x > 5:
+    print("x is greater than 5")
+</code></pre>
+            <br>
+
+            <h3 class="header"><b>elif statement</b></h3>
+            <p class="text">elif statements are used to check another condition if the previous if statement is false.
+            </p>
+            <pre class="codeBlock"><code># elif statement
+x = 10
+if x > 15:
+    print("x is greater than 15")
+elif x > 5:
+    print("x is greater than 5 but less than or equal to 15")
+</code></pre>
+            <br>
+
+            <h3 class="header"><b>else statement</b></h3>
+            <p class="text">else statements are used to execute a block of code if all previous conditions are false.
+            </p>
+            <pre class="codeBlock"><code># else statement
+x = 10
+if x > 15:
+    print("x is greater than 15")
+elif x > 5:
+    print("x is greater than 5 but less than or equal to 15")
+else:
+    print("x is less than or equal to 5")
+</code></pre>
+            <br>
+
+            <span class="anchor" id="match-statements"></span>
+            <h2 class="header"><b>Match Statements</b></h2>
+            <p class="text">Match statements are used to compare a value against a series of patterns and execute the
+                corresponding block of code when a match is found. They are similar to switch statements in other
+                programming languages.</p>
+            <pre class="codeBlock"><code># Match statement
+x = 3
+match x:
+    case 1:
+        print("x is 1")
+    case 2:
+        print("x is 2")
+    case 3:
+        print("x is 3")
+    case _:
+        print("x is not 1, 2, or 3")
+</code></pre>
+            <br>
+
+            <span class="anchor" id="loops"></span>
+            <h2 class="header"><b>Loops</b></h2>
+            <p class="text">Loops are used to execute a block of code repeatedly until a certain condition is met. The
+                most
+                common loops in Python are for and while loops.</p>
+            <br>
+
+            <h3 class="header"><b>for loop</b></h3>
+            <p class="text">for loops are used to iterate over a sequence (like a list, tuple, or string) and execute a
+                block of code for each item in the sequence.</p>
+            <pre class="codeBlock"><code># for loop
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# Output:
+# apple
+# banana
+# cherry
+</code></pre>
+            <br>
+
+            <h3 class="header"><b>while loop</b></h3>
+            <p class="text">while loops are used to execute a block of code repeatedly as long as a specified condition
+                is true.</p>
+            <pre class="codeBlock"><code># while loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
+</code></pre>
+            <br>
+
+            <span class="anchor" id="functions"></span>
+            <h2 class="header"><b>Functions</b></h2>
+            <p class="text">Functions are reusable blocks of code that perform a specific task. They can take
+                parameters and return values.</p>
+            <pre class="codeBlock"><code># Function definition
+def greet(name):
+    print(f"Hello, {name}!")
+
+# Function call
+greet("Alice")
+
+# Output:
+# Hello, Alice!
+</code></pre>
+            <br>
+            
+            <span class="anchor" id="try-except"></span>
+            <h2 class="header"><b>Try - Except</b></h2>
+            <p class="text">Try - Except blocks are used to handle exceptions (errors) that may occur during the execution
+                of a program. The code inside the try block is executed, and if an exception occurs, the code
+                inside the except block is executed.</p>
+            <pre class="codeBlock"><code># Try - Except block
+try:
+    result = 10 / 0  # This will raise a ZeroDivisionError
+except ZeroDivisionError:
+    print("You cannot divide by zero!")
+
+# Output:
+# You cannot divide by zero!
+</code></pre>
+            <br>
+            
+            <span class="anchor" id="classes"></span>
+            <h2 class="header"><b>Classes</b></h2>
+            <p class="text">Classes are blueprints for creating objects. They define a set of attributes and methods that
+                the objects created from the class will have.</p>
+            <pre class="codeBlock"><code># Class definition
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def drive(self):
+        print(f"The {self.brand} {self.model} is driving.")
+
+# Creating an object from the class
+my_car = Car("Toyota", "Corolla")
+        my_car.drive()  # Output: The Toyota Corolla is driving.
+        </code></pre>
+
+        </div>
     </div>
-
 </body>
 <script src="scripts.js"></script>
+
 </html>
