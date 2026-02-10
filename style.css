@@ -83,6 +83,14 @@ body {
     background-color: #202020;
 }
 
+.navBarBlur {
+    position: sticky;
+    top: 8px;
+    background-color: rgba(55, 55, 55, 0.25);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
 .codeBlock {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -109,13 +117,11 @@ body {
 
 .headBar {
     top: 8px;
-    position: sticky;
     width: 100%;
 }
 
 .headNavigator {
     top: 60px;
-    position: sticky;
     width: 100%;
 }
 

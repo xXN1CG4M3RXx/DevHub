@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-CH">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,409 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/cSharpFavicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <ul class="navBar">
-        <li class="navBarItem"><a href="./" class="navBarLink">Home</a></li>
-        <li class="navBarItem"><a href="./markdown.html" class="navBarLink">Markdown</a></li>
-        <li class="navBarItem"><a href="./python.html" class="navBarLink">Python</a></li>
-        <li class="navBarItem"><a href="./java.html" class="navBarLink">Java</a></li>
-        <li class="navBarItem selectedItem"><a href="./cSharp.html" class="navBarLink">C#</a></li>
-        <li class="navBarItem"><a href="./sql.html" class="navBarLink">SQL</a></li>
-        <li class="navBarItem"><a href="./html.html" class="navBarLink">HTML</a></li>
-        <li class="navBarItem"><a href="./css.html" class="navBarLink">CSS</a></li>
-        <li class="navBarItem"><a href="./javaScript.html" class="navBarLink">JavaScript</a></li>
-        <li class="navBarItem"><a href="./git.html" class="navBarLink">Git</a></li>
-    </ul>
+    <div class="content">
+        <div class="navBarBlur">
+            <header class="headBar">
+                <ul class="navBar">
+                    <li class="navBarItem"><a href="./" class="navBarLink">Home</a></li>
+                    <li class="navBarItem"><a href="./markdown.html" class="navBarLink">Markdown</a></li>
+                    <li class="navBarItem"><a href="./python.html" class="navBarLink">Python</a></li>
+                    <li class="navBarItem"><a href="./java.html" class="navBarLink">Java</a></li>
+                    <li class="navBarItem selectedItem"><a href="./cSharp.html" class="navBarLink">C#</a></li>
+                    <li class="navBarItem"><a href="./sql.html" class="navBarLink">SQL</a></li>
+                    <li class="navBarItem"><a href="./html.html" class="navBarLink">HTML</a></li>
+                    <li class="navBarItem"><a href="./css.html" class="navBarLink">CSS</a></li>
+                    <li class="navBarItem"><a href="./javaScript.html" class="navBarLink">JavaScript</a></li>
+                    <li class="navBarItem"><a href="./git.html" class="navBarLink">Git</a></li>
+                </ul>
+            </header>
 
-    <div class="sheetText">
-        <h2 class="header">Hello world in C#</h2>
+            <header class="headNavigator">
+                <ul class="chapterNavigator">
+                    <li class="chapterNavigatorItem"><a href="#introduction"
+                            class="chapterNavigatorLink">Introduction</a>
+                    </li>
+                    <li class="chapterNavigatorItem"><a href="#comments" class="chapterNavigatorLink">Comments</a></li>
+                    <li class="chapterNavigatorItem"><a href="#variables" class="chapterNavigatorLink">Variables</a>
+                    </li>
+                    <li class="chapterNavigatorItem"><a href="#data-types" class="chapterNavigatorLink">Data Types</a>
+                    </li>
+                    <li class="chapterNavigatorItem"><a href="#operators" class="chapterNavigatorLink">Operators</a>
+                    </li>
+                    <li class="chapterNavigatorItem"><a href="#conditional-statements"
+                            class="chapterNavigatorLink">Conditional Statements</a></li>
+                    <li class="chapterNavigatorItem"><a href="#loops" class="chapterNavigatorLink">Loops</a></li>
+                    <li class="chapterNavigatorItem"><a href="#functions" class="chapterNavigatorLink">Functions</a>
+                    </li>
+                    <li class="chapterNavigatorItem"><a href="#try-catch" class="chapterNavigatorLink">Try - Catch</a>
+                    </li>
+                    <li class="chapterNavigatorItem"><a href="#classes" class="chapterNavigatorLink">Classes</a></li>
+                </ul>
+            </header>
+        </div>
 
-        <pre class="codeBlock"><code class="language-csharp">using System;
+        <div class="sheetText">
+            <h1 class="header"><b>C#</b></h1>
 
-namespace HelloWorld
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
+            <span class="anchor" id="introduction"></span>
+            <h2 class="header"><B>Introduction</B></h2>
+            <p class="text">C# is a modern, object-oriented programming language developed by Microsoft. It is widely
+                used for
+                building applications on the .NET platform, including web applications, desktop applications, and mobile
+                apps.</p>
+
+            <span class="anchor" id="comments"></span>
+            <h2 class="header"><b>Comments</b></h2>
+            <p class="text">Comments are used to explain code and make it more readable. In C#, you can use single-line
+                comments with // or multi-line comments with /* */.</p>
+            <pre class="codeBlock"><code class="language-csharp">// This is a single-line comment <br>
+/* This is a multi-line comment
+that spans multiple lines */</code></pre>
+
+            <span class="anchor" id="variables"></span>
+            <h2 class="header"><b>Variables</b></h2>
+            <h3 class="header"><b>Types of Variables</b></h3>
+            <table class="table">
+                <tr>
+                    <th>Type</th>
+                    <th>Use</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>Integer</td>
+                    <td>Storing whole numbers</td>
+                    <td>int x = 5;</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>Storing decimal numbers</td>
+                    <td>double y = 3.14;</td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td>Storing text</td>
+                    <td>string name = "John";</td>
+                </tr>
+                <tr>
+                    <td>Boolean</td>
+                    <td>Storing True or False values</td>
+                    <td>bool is_active = true;</td>
+                </tr>
+            </table>
+            <br>
+
+            <h3 class="header"><b>Strings</b></h3>
+            <p class="text">Strings are used to store <b>text.</b> In C#, you can create a string variable using the
+                string keyword.</p>
+            <pre class="codeBlock"><code class="language-csharp">// Creating a string
+string greeting = "Hello, World!";
+Console.WriteLine(greeting);
+
+// Output: Hello, World!</code></pre>
+            <br>
+            <p class="text">There are a lot of string methods available in C# that allow you to manipulate and work with
+                strings. Some of the most commonly used methods include:</p>
+            <ul class="list">
+                <li><b>Length:</b> Returns the length of the string.</li>
+                <li><b>Substring:</b> Extracts a portion of the string.</li>
+                <li><b>Replace:</b> Replaces occurrences of a specified substring with another substring.</li>
+                <li><b>ToUpper:</b> Converts the string to uppercase.</li>
+                <li><b>ToLower:</b> Converts the string to lowercase.</li>
+                <li><b>Trim:</b> Removes leading and trailing whitespace from the string.</li>
+            </ul>
+            <br>
+            <pre class="codeBlock"><code class="language-csharp">string name = "John";
+int age = 30;
+string message = $"My name is {name} and I am {age} years old.";
+Console.WriteLine(message); // Output: My name is John and I am 30 years old.
+
+// Concatenating strings
+string firstName = "John";
+string lastName = "Doe";
+string fullName = firstName + " " + lastName;
+Console.WriteLine(fullName); // Output: John Doe
+
+// Length of a string
+string text = "Hello, World!";
+int length = text.Length;
+Console.WriteLine(length); // Output: 13
+
+// Substring
+string substring = text.Substring(7, 5);
+Console.WriteLine(substring); // Output: World
+
+// Replace
+string replaced = text.Replace("World", "Universe");
+Console.WriteLine(replaced); // Output: Hello, Universe!
+
+// ToUpper and ToLower
+string upper = text.ToUpper();
+string lower = text.ToLower();
+Console.WriteLine(upper); // Output: HELLO, WORLD!
+Console.WriteLine(lower); // Output: hello, world!
+
+// Trim
+string trimmed = "   Hello, World!   ".Trim();
+Console.WriteLine(trimmed); // Output: Hello, World!</code></pre>
+
+            <br>
+
+            <h3 class="header"><b>Integers and Doubles</b></h3>
+            <p class="text">Integers and doubles are used to store whole numbers and decimal numbers, respectively.</p>
+            <pre class="codeBlock"><code class="language-csharp">// Creating an integer
+int myInt = 42;
+
+// Creating a double
+double myDouble = 3.14;
+
+// Addition
+int sum = myInt + 10;
+Console.WriteLine(sum); // Output: 52
+
+// Subtraction
+int difference = myInt - 10;
+Console.WriteLine(difference); // Output: 32
+
+// Multiplication
+int product = myInt * 2;
+Console.WriteLine(product); // Output: 84
+
+// Division
+double quotient = myDouble / 2;
+Console.WriteLine(quotient); // Output: 1.5</code></pre>
+            <br>
+
+            <h3 class="header"><b>Booleans</b></h3>
+            <p class="text">Booleans are used to store True or False values. In C#, you can create a boolean variable
+                using the bool keyword.</p>
+            <pre class="codeBlock"><code class="language-csharp">// Creating a boolean
+bool isActive = true;
+bool isInactive = false;
+
+// Logical AND
+bool andResult = isActive && isInactive;
+Console.WriteLine(andResult); // Output: false
+
+// Logical OR
+bool orResult = isActive || isInactive;
+Console.WriteLine(orResult); // Output: true
+
+// Logical NOT
+bool notResult = !isActive;
+Console.WriteLine(notResult); // Output: false</code></pre>
+            <br>
+
+
+            <span class="anchor" id="data-types"></span>
+            <h2 class="header"><b>Data Types</b></h2>
+            <p class="text">In C#, data types define the type of value a variable can hold. Common data types include:
+            </p>
+            <ul class="list">
+                <li><b>int:</b> Whole numbers</li>
+                <li><b>double:</b> Decimal numbers</li>
+                <li><b>string:</b> Text</li>
+                <li><b>bool:</b> True or False</li>
+                <li><b>array:</b> A collection of elements of the same type</li>
+                <li><b>var:</b> Implicitly typed variable (the type is inferred by the compiler)</li>
+            </ul>
+            <br>
+
+            <h3 class="header"><b>Arrays</b></h3>
+            <p class="text">Arrays are used to store multiple values of the same type. In C#, you can create an array
+                using the following syntax:</p>
+            <pre class="codeBlock"><code class="language-csharp">// Creating an array of integers
+int[] numbers = new int[5];
+
+// Initializing an array with values
+string[] names = new string[] { "Alice", "Bob", "Charlie" };
+
+// Modifying an array element
+numbers[0] = 10;
+numbers[2] = 30;
+numbers[4] = 50;
+
+// Accessing array elements
+Console.WriteLine(names[0]); // Output: Alice</code></pre>
+            <br>
+
+            <span class="anchor" id="operators"></span>
+            <h2 class="header"><b>Operators</b></h2>
+            <p class="text">Operators are symbols that perform operations on variables and values. Common operators in
+                C# include:</p>
+            <ul class="list">
+                <li><b>Arithmetic Operators:</b> +, -, *, /, %</li>
+                <li><b>Comparison Operators:</b> ==, !=, >, <,>=, <=< /li>
+                <li><b>Logical Operators:</b> &&, ||, !</li>
+                <li><b>Assignment Operators:</b> =, +=, -=, *=, /=, %=</li>
+            </ul>
+            <br>
+
+            <span class="ancho"r id="conditional-statements"></span>
+            <h2 class="header"><b>Conditional Statements</b></h2>
+            <p class="text">Conditional statements allow you to execute different blocks of code based on certain
+                conditions. In C#, you can use if, else if, and else statements for conditional logic. There are 4 types
+                of conditional statements:</p>
+            <ul class="list">
+                <li><b>If Statement:</b> Executes a block of code if a specified condition is true.</li>
+                <li><b>Else If Statement:</b> Specifies a new condition to test if the previous condition is false.</li>
+                <li><b>Else Statement:</b> Executes a block of code if all previous conditions are false.</li>
+                <li><b>Switch Statement:</b> Selects one of many code blocks to execute based on the value of a variable.</li>
+            </ul>
+            <br>
+
+            <h3 class="header"><b>If Statement</b></h3>
+            <p class="text">Executes a block of code if a specified condition is true</p>
+            <pre class="codeBlock"><code class="language-csharp">int number = 10;
+if (number > 0) {
+    Console.WriteLine("The number is positive.");
+}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Else If Statement</b></h3>
+            <p class="text">Executes a block of code if the previous condition is false and a new condition is true</p>
+            <pre class="codeBlock"><code class="language-csharp">int number = -15;
+if (number > 0) {
+    Console.WriteLine("The number is positive.");
+} else if (number < 0) {
+    Console.WriteLine("The number is negative.");
+}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Else Statement</b></h3>
+            <p class="text">Executes a block of code if all previous conditions are false</p>
+            <pre class="codeBlock"><code class="language-csharp">int number = 0;
+if (number > 0) {
+    Console.WriteLine("The number is positive.");
+} else if (number < 0) {
+    Console.WriteLine("The number is negative.");
+} else {
+    Console.WriteLine("The number is zero.");
+}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Switch Statement</b></h3>
+            <p class="text">Selects one of many code blocks to execute based on the value of a variable</p>
+            <pre class="codeBlock"><code class="language-csharp">int day = 3;
+switch (day) {
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    case 2:
+        Console.WriteLine("Tuesday");
+        break;
+    case 3:
+        Console.WriteLine("Wednesday");
+        break;
+    default:
+        Console.WriteLine("Invalid day");
+        break;
+}</code></pre>
+            <br>
+
+            <span class="anchor" id="loops"></span>
+            <h2 class="header"><b>Loops</b></h2>
+            <p class="text">Loops are used to execute a block of code repeatedly until a specific condition is met. In C#, there are four types of loops:</p>
+            <ul class="list">
+                <li><b>For Loop:</b> Executes a block of code a specified number of times.</li>
+                <li><b>While Loop:</b> Executes a block of code as long as a specified condition is true.</li>
+                <li><b>Do-While Loop:</b> Executes a block of code at least once, and then continues to execute as long as a specified condition is true.</li>
+                <li><b>Foreach Loop:</b> Iterates through each element in a collection or array.</li>
+            </ul>
+            <br>
+
+            <h3 class="header"><B>For Loop</B></h3>
+            <p class="text">Executes a block of code a specified number of times</p>
+            <pre class="codeBlock"><code class="language-csharp">for (int i = 0; i < 5; i++) {
+    Console.WriteLine(i);
+}</code></pre>
+            <br>
+
+            <h3 class="header"><b>While Loop</b></h3>
+            <p class="text">Executes a block of code as long as a specified condition is true</p>
+            <pre class="codeBlock"><code class="language-csharp">int i = 0;
+while (i < 5) {
+    Console.WriteLine(i);
+    i++;
+}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Do-While Loop</b></h3>
+            <p class="text">Executes a block of code at least once, and then continues to execute as long as a specified condition is true</p>
+            <pre class="codeBlock"><code class="language-csharp">int i = 0;
+do {
+    Console.WriteLine(i);
+    i++;
+} while (i < 5);</code></pre>
+            <br>
+
+            <h3 class="header"><b>Foreach Loop</b></h3>
+            <p class="text">Iterates through each element in a collection or array</p>
+            <pre class="codeBlock"><code class="language-csharp">string[] names = { "Alice", "Bob", "Charlie" };
+foreach (string name in names) {
+    Console.WriteLine(name);
+}</code></pre>
+            <br>
+
+            <span class="anchor" id="functions"></span>
+            <h2 class="header"><b>Functions</b></h2>
+            <p class="text">Functions are reusable blocks of code that perform a specific task. In C#, you can define a function using the following syntax:</p>
+            <pre class="codeBlock"><code class="language-csharp">return_type FunctionName(parameters) {
+    // Function body
+}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Example</b></h3>
+            <pre class="codeBlock"><code class="language-csharp">void Greet(string name) {
+    Console.WriteLine($"Hello, {name}!");
 }
-</code></pre>
+
+Greet("Alice"); // Output: Hello, Alice!</code></pre>
+            <br>
+
+
+            <span class="anchor" id="try-catch"></span>
+            <h2 class="header"><b>Try - Catch</b></h2>
+            <p class="text">Try-catch blocks are used to handle exceptions and errors in C#. The try block contains code that may throw an exception, while the catch block contains code to handle the exception if it occurs.</p>
+            <pre class="codeBlock"><code class="language-csharp">try {
+    // Code that may throw an exception
+}
+catch (Exception ex) {
+    // Code to handle the exception
+}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Example</b></h3>
+            <pre class="codeBlock"><code class="language-csharp">try {
+    int[] numbers = { 1, 2, 3 };
+    Console.WriteLine(numbers[5]); // This will throw an IndexOutOfRangeException
+}
+catch (IndexOutOfRangeException e) {
+    Console.WriteLine("An error occurred: " + e.Message);
+}</code></pre>
+            <br>
+
+            <span class="anchor" id="classes"></span>
+            <h2 class="header"><b>Classes</b></h2>
+            <p class="text">Classes are blueprints for creating objects in C#. They encapsulate data and behavior related to that data. You can define a class using the following syntax:</p>
+            <pre class="codeBlock"><code class="language-csharp">class ClassName {
+    // Class members and methods
+}</code></pre>
+            <br>
+
+            <h3 class="header"><b>Example</b></h3>
+            <pre class="codeBlock"><code class="language-csharp">class Person {
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public void Greet() {
+        Console.WriteLine($"Hello, my name is {Name} and I am {Age} years old.");
+    }
+}</code></pre>
+            <br>
+        </div>
     </div>
-    
 </body>
 <script src="scripts.js"></script>
 </html>
