@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-CH">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,455 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <link rel="icon" href="assets/javaFavicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <ul class="navBar">
-        <li class="navBarItem"><a href="./" class="navBarLink">Home</a></li>
-        <li class="navBarItem"><a href="./markdown.html" class="navBarLink">Markdown</a></li>
-        <li class="navBarItem"><a href="./python.html" class="navBarLink">Python</a></li>
-        <li class="navBarItem selectedItem"><a href="./java.html" class="navBarLink">Java</a></li>
-        <li class="navBarItem"><a href="./cSharp.html" class="navBarLink">C#</a></li>
-        <li class="navBarItem"><a href="./sql.html" class="navBarLink">SQL</a></li>
-        <li class="navBarItem"><a href="./html.html" class="navBarLink">HTML</a></li>
-        <li class="navBarItem"><a href="./css.html" class="navBarLink">CSS</a></li>
-        <li class="navBarItem"><a href="./javaScript.html" class="navBarLink">JavaScript</a></li>
-        <li class="navBarItem"><a href="./git.html" class="navBarLink">Git</a></li>
-    </ul>
+    <div class="content">
+        <header class="headBar">
+            <ul class="navBar">
+                <li class="navBarItem"><a href="./" class="navBarLink">Home</a></li>
+                <li class="navBarItem"><a href="./markdown.html" class="navBarLink">Markdown</a></li>
+                <li class="navBarItem"><a href="./python.html" class="navBarLink">Python</a></li>
+                <li class="navBarItem selectedItem"><a href="./java.html" class="navBarLink">Java</a></li>
+                <li class="navBarItem"><a href="./cSharp.html" class="navBarLink">C#</a></li>
+                <li class="navBarItem"><a href="./sql.html" class="navBarLink">SQL</a></li>
+                <li class="navBarItem"><a href="./html.html" class="navBarLink">HTML</a></li>
+                <li class="navBarItem"><a href="./css.html" class="navBarLink">CSS</a></li>
+                <li class="navBarItem"><a href="./javaScript.html" class="navBarLink">JavaScript</a></li>
+                <li class="navBarItem"><a href="./git.html" class="navBarLink">Git</a></li>
+            </ul>
+        </header>
 
-    <div class="sheetText">
-        <h2 class="header">Hello world in Java</h2>
+        <header class="headNavigator">
+            <ul class="chapterNavigator">
+                <li class="chapterNavigatorItem"><a href="#introduction" class="chapterNavigatorLink">Introduction</a>
+                </li>
+                <li class="chapterNavigatorItem"><a href="#comments" class="chapterNavigatorLink">Comments</a></li>
+                <li class="chapterNavigatorItem"><a href="#variables" class="chapterNavigatorLink">Variables</a></li>
+                <li class="chapterNavigatorItem"><a href="#data-types" class="chapterNavigatorLink">Data Types</a></li>
+                <li class="chapterNavigatorItem"><a href="#operators" class="chapterNavigatorLink">Operators</a></li>
+                <li class="chapterNavigatorItem"><a href="#conditional-statements"
+                        class="chapterNavigatorLink">Conditional Statements</a></li>
+                <li class="chapterNavigatorItem"><a href="#loops" class="chapterNavigatorLink">Loops</a></li>
+                <li class="chapterNavigatorItem"><a href="#functions" class="chapterNavigatorLink">Functions</a></li>
+                <li class="chapterNavigatorItem"><a href="#try-catch" class="chapterNavigatorLink">Try - Catch</a>
+                </li>
+                <li class="chapterNavigatorItem"><a href="#classes" class="chapterNavigatorLink">Classes</a></li>
+            </ul>
+        </header>
 
-        <pre class="codeBlock"><code class="language-java">public class HelloWorld {
+        <div class="sheetText">
+            <h1 class="header"><b>Java</b></h1>
+            <span class="anchor" id="introduction"></span>
+            <h2 class="header"><b>Introduction</b></h2>
+            <p class="text">Java is a high-level, class-based, object-oriented programming language that is designed to
+                have as few implementation dependencies as possible. It is a general-purpose programming language
+                intended for writing portable applications that can run on any platform that supports Java.</p>
+            <br>
+
+            <span class="anchor" id="comments"></span>
+            <h2 class="header"><b>Comments</b></h2>
+            <p class="text">Comments are used to explain code and make it more readable. In Java, there are three types
+                of
+                comments:</p>
+            <ul class="list">
+                <li>Single-line comments start with // and are used to comment out a single line of code.</li>
+                <li>Multi-line comments start with /* and end with */ and are used to comment out multiple lines of
+                    code.</li>
+                <li>Documentation comments start with /** and end with */ and are used to generate documentation for the
+                    code.</li>
+            </ul>
+            <br>
+            <pre class="codeBlock"><code class="language-java">// This is a single-line comment
+
+/* This is a multi-line comment
+that spans multiple lines */
+
+/**
+ * This is a documentation comment
+ * that explains the purpose of the code
+ */
+            </code></pre>
+            <br>
+
+            <span class="anchor" id="variables"></span>
+            <h2 class="header"><b>Variables</b></h2>
+            <h3 class="header"><b>Types of variables</b></h3>
+            <table class="table">
+                <tr>
+                    <th>Type</th>
+                    <th>Use</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>Integer</td>
+                    <td>Storing whole numbers</td>
+                    <td>int x = 5;</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>Storing decimal numbers</td>
+                    <td>double y = 3.14;</td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td>Storing text</td>
+                    <td>String name = "John";</td>
+                </tr>
+                <tr>
+                    <td>Boolean</td>
+                    <td>Storing True or False values</td>
+                    <td>boolean is_active = true;</td>
+                </tr>
+            </table>
+            <br>
+
+            <h3 class="header"><b>Strings</b></h3>
+            <p class="text">Strings are used to store <b>text.</b> They can be any length or single characters. They are
+                enclosed in either single or double quotes. They can be created by assigning a value to a variable.</p>
+            <pre class="codeBlock"><code class="language-java">// Creating a string
+String myString = "Hello, World!";
+System.out.println(myString);
+
+// Output: Hello, World!
+</code></pre>
+            <br>
+            <p class="text">There are a lot of useful operations that can be performed on strings in Java.</p>
+            <pre class="codeBlock"><code class="language-java">// Concatenation
+String firstName = "John";
+String lastName = "Doe";
+String fullName = firstName + " " + lastName;
+System.out.println(fullName); // Output: John Doe
+
+// Length
+String text = "Hello, World!";
+int length = text.length();
+System.out.println(length); // Output: 137
+
+// Indexing
+String str = "Hello, World!";
+char firstChar = str.charAt(0);
+System.out.println(firstChar); // Output: H
+
+// Substring
+String str = "Hello, World!";
+String substring = str.substring(7);
+System.out.println(substring); // Output: World!
+
+// Replace
+String original = "Hello, World!";
+String newString = original.replace("World", "Java");
+System.out.println(newString); // Output: Hello, Java!
+
+// Repetition
+String str = "Hello";
+String repeated = str.repeat(3);
+System.out.println(repeated); // Output: HelloHelloHello
+</code></pre>
+
+            <br>
+            <h3 class="header"><b>Integers and Doubles</b></h3>
+            <p class="text">Integers and doubles are used to store numbers. Integers are whole numbers, while doubles
+                are
+                decimal numbers. They can be created by assigning a value to a variable.</p>
+            <pre class="codeBlock"><code class="language-java">// Creating an integer
+int myInt = 42;
+
+// Creating a double
+double myDouble = 3.14;
+
+System.out.println(myInt); // Output: 42
+System.out.println(myDouble); // Output: 3.14
+
+// Addition
+int sum = myInt + 10;
+System.out.println(sum); // Output: 52
+
+// Subtraction
+int difference = myInt - 10;
+System.out.println(difference); // Output: 32
+
+// Multiplication
+int product = myInt * 2;
+System.out.println(product); // Output: 84
+
+// Division
+double quotient = myDouble / 2;
+System.out.println(quotient); // Output: 1.57
+</code></pre>
+
+            <br>
+            <h3 class="header"><b>Booleans</b></h3>
+            <p class="text">Booleans are used to store True or False values. They can be created by assigning a value to
+                a
+                variable.</p>
+            <pre class="codeBlock"><code class="language-java">// Creating a boolean
+boolean isJavaFun = true;
+boolean isPythonFun = false;
+
+System.out.println(isJavaFun); // Output: true
+System.out.println(isPythonFun); // Output: false
+
+// Logical AND
+boolean andResult = isJavaFun && isPythonFun;
+System.out.println(andResult); // Output: false
+
+// Logical OR
+boolean orResult = isJavaFun || isPythonFun;
+System.out.println(orResult); // Output: true
+
+// Logical NOT
+boolean notResult = !isJavaFun;
+System.out.println(notResult); // Output: false
+</code></pre>
+            <br>
+            <span class="anchor" id="data-types"></span>
+            <h2 class="header"><b>Data Types</b></h2>
+            <p class="text">Java has several built-in data types, including:</p>
+            <ul class="list">
+                <li><b>byte:</b> A 8-bit signed integer.</li>
+                <li><b>short:</b> A 16-bit signed integer.</li>
+                <li><b>int:</b> A 32-bit signed integer.</li>
+                <li><b>long:</b> A 64-bit signed integer.</li>
+                <li><b>float:</b> A 32-bit floating-point number.</li>
+                <li><b>double:</b> A 64-bit floating-point number.</li>
+                <li><b>char:</b> A single 16-bit Unicode character.</li>
+                <li><b>boolean:</b> A value that can be either true or false.</li>
+                <li><b>String:</b> A sequence of characters.</li>
+                <li><b>Array:</b> A collection of elements of the same type.</li>
+            </ul>
+            <br>
+            <p class="text">There are also other data types you can use by importing additional libraries or creating
+                custom classes.</p>
+            <br>
+
+            <h3 class="header"><b>Arrays</b></h3>
+            <p class="text">Arrays are used to store multiple values in a single variable. They can be created by
+                specifying the type of elements and the size of the array.</p>
+            <pre class="codeBlock"><code class="language-java">// Creating an array of integers
+int[] myArray = new int[5];
+
+// Assigning values to the array
+myArray[0] = 10;
+myArray[1] = 20;
+myArray[2] = 30;
+myArray[3] = 40;
+myArray[4] = 50;
+
+// Accessing values from the array
+System.out.println(myArray[0]); // Output: 10
+System.out.println(myArray[2]); // Output: 30
+
+// Creating an array of strings
+String[] names = {"Alice", "Bob", "Charlie"};
+
+// Accessing values from the array
+System.out.println(names[1]); // Output: Bob
+</code></pre>
+            <br>
+
+            <span class="anchor" id="operators"></span>
+            <h2 class="header"><b>Operators</b></h2>
+            <p class="text">Operators are used to perform operations on variables and values. Java has several types of
+                operators, including:</p>
+            <ul class="list">
+                <li><b>Arithmetic operators:</b> Used to perform mathematical operations.</li>
+                <li><b>Assignment operators:</b> Used to assign values to variables.</li>
+                <li><b>Comparison operators:</b> Used to compare two values.</li>
+                <li><b>Logical operators:</b> Used to combine conditional statements.</li>
+                <li><b>Bitwise operators:</b> Used to perform bit-level operations.</li>
+                <li><b>Unary operators:</b> Used to perform operations on a single operand.</li>
+            </ul>
+            <br>
+            <h3 class="header"><b>Arithmetic Operators</b></h3>
+            <p class="text">Arithmetic operators are used to perform mathematical operations. They include:</p>
+            <ul class="list">
+                <li><b>+</b>: Addition</li>
+                <li><b>-</b>: Subtraction</li>
+                <li><b>*</b>: Multiplication</li>
+                <li><b>/</b>: Division</li>
+                <li><b>%</b>: Modulus (remainder)</li>
+            </ul>
+            <br>
+            <h3 class="header"><b>Assignment Operators</b></h3>
+            <p class="text">Assignment operators are used to assign values to variables. They include:</p>
+            <ul class="list">
+                <li><b>=</b>: Assigns a value to a variable</li>
+                <li><b>+=</b>: Adds a value to a variable and assigns the result to that variable</li>
+                <li><b>-=</b>: Subtracts a value from a variable and assigns the result to that variable</li>
+                <li><b>*=</b>: Multiplies a variable by a value and assigns the result to that variable</li>
+                <li><b>/=</b>: Divides a variable by a value and assigns the result to that variable</li>
+                <li><b>%=</b>: Finds the remainder of a variable divided by a value and assigns the result to that
+                    variable</li>
+            </ul>
+            <br>
+            <h3 class="header"><b>Comparison Operators</b></h3>
+            <p class="text">Comparison operators are used to compare two values. They include:</p>
+            <ul class="list">
+                <li><b>==</b>: Checks if two values are equal</li>
+                <li><b>!=</b>: Checks if two values are not equal</li>
+                <li><b>&gt;</b>: Checks if the left value is greater than the right value</li>
+                <li><b>&lt;</b>: Checks if the left value is less than the right value</li>
+                <li><b>&gt;=</b>: Checks if the left value is greater than or equal to the right value</li>
+                <li><b>&lt;=</b>: Checks if the left value is less than or equal to the right value</li>
+            </ul>
+            <br>
+            <h3 class="header"><b>Logical Operators</b></h3>
+            <p class="text">Logical operators are used to combine conditional statements. They include:</p>
+            <ul class="list">
+                <li><b>&&</b>: Logical AND</li>
+                <li><b>||</b>: Logical OR</li>
+                <li><b>!</b>: Logical NOT</li>
+            </ul>
+            <br>
+            <h3 class="header"><b>Bitwise Operators</b></h3>
+            <p class="text">Bitwise operators are used to perform bit-level operations. They include:</p>
+            <ul class="list">
+                <li><b>&</b>: Bitwise AND</li>
+                <li><b>|</b>: Bitwise OR</li>
+                <li><b>^</b>: Bitwise XOR</li>
+                <li><b>~</b>: Bitwise NOT</li>
+                <li><b>&lt;&lt;</b>: Left shift</li>
+                <li><b>&gt;&gt;</b>: Right shift</li>
+            </ul>
+            <br>
+            <h3 class="header"><b>Unary Operators</b></h3>
+            <p class="text">Unary operators are used to perform operations on a single operand. They include:</p>
+            <ul class="list">
+                <li><b>+</b>: Unary plus</li>
+                <li><b>-</b>: Unary minus</li>
+                <li><b>!</b>: Logical NOT</li>
+            </ul>
+            <br>
+
+            <span class="anchor" id="conditional-statements"></span>
+            <h2 class="header"><b>Conditional Statements</b></h2>
+            <p class="text">Conditional statements are used to perform different actions based on different conditions.
+                They
+                include:</p>
+            <ul class="list">
+                <li><b>if</b></li>
+                <li><b>else</b></li>
+                <li><b>else if</b></li>
+                <li><b>switch</b></li>
+            </ul>
+            <br>
+
+            <h3 class="header"><b>if</b></h3>
+            <p class="text">Executes a block of code if a condition is true.</p>
+            <pre class="codeBlock"><code class="language-java">int x = 20;
+if (x &gt; 18) {
+    System.out.println("x is greater than 18");
+}</code></pre>
+
+            <h3 class="header"><b>else</b></h3>
+            <p class="text">Executes a block of code if the condition in the if statement is false.</p>
+            <pre class="codeBlock"><code class="language-java">int time = 20;
+if (time < 18) {
+    System.out.println("Good day.");
+} else {
+    System.out.println("Good evening.");
+}</code></pre>
+
+            <h3 class="header"><b>else if</b></h3>
+            <p class="text">Executes a block of code if the first condition is false and the else if condition is true.
+            </p>
+            <pre class="codeBlock"><code class="language-java">int time = 22;
+if (time < 10) {
+    System.out.println("Good morning.");
+} else if (time < 20) {
+    System.out.println("Good day.");
+} else {
+    System.out.println("Good evening.");
+}</code></pre>
+
+            <h3 class="header"><b>switch</b></h3>
+            <p class="text">Executes a block of code based on the value of a variable.</p>
+            <pre class="codeBlock"><code class="language-java">int day = 3;
+switch (day) {
+    case 1 -> System.out.println("Monday");
+    case 2 -> System.out.println("Tuesday");
+    case 3 -> System.out.println("Wednesday");
+    default -> System.out.println("Another day");
+}</code></pre>
+            <br>
+
+            <span class="anchor" id="loops"></span>
+            <h2 class="header"><b>Loops</b></h2>
+            <p class="text">Loops are used to repeatedly execute a block of code until a specific condition is met.
+                They include:</p>
+            <ul class="list">
+                <li><b>for</b></li>
+                <li><b>while</b></li>
+                <li><b>do-while</b></li>
+            </ul>
+            <br>
+
+            <h3 class="header"><b>For Loop</b></h3>
+            <p class="text">The for loop is used to iterate over a block of code a specific number of times.</p>
+            <pre class="codeBlock"><code class="language-java">for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}</code></pre>
+            <h3 class="header"><b>While Loop</b></h3>
+            <p class="text">The while loop is used to repeatedly execute a block of code as long as a specific condition is true</p>
+            <pre class="codeBlock"><code class="language-java">int i = 0;
+while (i < 5) {
+    System.out.println(i);
+    i++;
+}</code></pre>
+            <br>
+
+            <span class="anchor" id="functions"></span>
+            <h2 class="header"><b>Functions</b></h2>
+            <p class="text">In Java, functions are called <b>methods</b> and must be declared inside a class.</p>
+            <pre class="codeBlock"><code class="language-java">public class Main {
+    static void myMethod(String name) {
+        System.out.println("Hello " + name);
+    }
+
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        myMethod("Alice");
+    }
+}</code></pre>
+            <br>
+
+            <span class="anchor" id="try-catch"></span>
+            <h2 class="header"><b>Try - Catch</b></h2>
+            <p class="text">Try-catch blocks are used to handle exceptions and prevent the program from crashing.</p>
+            <pre class="codeBlock"><code class="language-java">try {
+    int[] myNumbers = {1, 2, 3};
+    System.out.println(myNumbers[10]);
+} catch (Exception e) {
+    System.out.println("Something went wrong.");
+} finally {
+    System.out.println("The 'try catch' is finished.");
+}</code></pre>
+            <br>
+
+            <span class="anchor" id="classes"></span>
+            <h2 class="header"><b>Classes</b></h2>
+            <p class="text">Java is an object-oriented language. Everything is associated with classes and objects.</p>
+            <pre class="codeBlock"><code class="language-java">public class Car {
+    String brand;
+    int year;
+
+    // Constructor
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+
+    public void drive() {
+        System.out.println("The " + brand + " is driving!");
     }
 }
-</code></pre>
+
+// Usage
+Car myCar = new Car("Tesla", 2023);
+myCar.drive();</code></pre>
+        </div>
     </div>
-    
+
 </body>
 <script src="scripts.js"></script>
+
 </html>
